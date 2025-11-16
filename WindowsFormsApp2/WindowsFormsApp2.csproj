@@ -49,6 +49,12 @@
     <Compile Include="Database\DatabaseHelper.cs" />
     <Compile Include="Database\DataAccess.cs" />
     <Compile Include="Models\Models.cs" />
+    <Compile Include="Forms\AddRequestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddRequestForm.Designer.cs">
+      <DependentUpon>AddRequestForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -57,6 +63,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\AddRequestForm.resx">
+      <DependentUpon>AddRequestForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

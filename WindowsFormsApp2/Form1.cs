@@ -89,8 +89,11 @@ namespace WindowsFormsApp2
 
         private void btnAddRequest_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Форма додавання заявки буде реалізована", 
-                "Інформація", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            Forms.AddRequestForm addForm = new Forms.AddRequestForm();
+            if (addForm.ShowDialog() == DialogResult.OK)
+            {
+                LoadRepairRequests();
+            }
         }
     }
 }
